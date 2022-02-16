@@ -1,0 +1,478 @@
+/* STYLESHEET FOR PROJECT */
+
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Bitter:wght@400;500&family=Gideon+Roman&family=Hind+Siliguri:wght@400;500&family=Josefin+Sans&family=Libre+Baskerville&family=Lora:wght@500&family=Luxurious+Roman&family=Montserrat&family=Orelega+One&family=Roboto+Slab&family=Rubik&family=Shippori+Antique&family=Source+Sans+Pro&family=Titillium+Web&display=swap');
+
+/* All */
+*{
+    font-family: 'Bitter', serif;
+}
+
+/* Body */
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Required */
+.required{
+    color: red;
+    font-size: 18px;
+    display: none;
+}
+
+/* Modal */
+.modal, .aboutModal{
+    display: none;
+    z-index: 1060;
+    position: fixed;
+    z-index: 1060;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.aboutModal{
+    background-color: rgba(0, 0, 0, 0.800);
+    padding-top: 70px;
+}
+.aboutModal button{
+    border: 0px;
+    color: gray;
+    font-size: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: -7px;
+}
+
+/* City Modal */
+.city-modal{
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: auto;
+    padding: 3px 10px;
+    background-color: white;
+}
+.city-modal h3{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+.city-modal button{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0px 5px;
+    border-radius: 5px;
+    background-color: rgb(122, 122, 122);
+    color: white;
+}
+.city-modal button:hover{
+    background-color: rgb(109, 109, 109);
+    cursor: pointer;
+}
+
+/* About Modal */
+.about-modal{
+    background-color: white;
+    width: 50%;
+    padding: 8px 25px;
+    border-radius: 8px;
+    margin: auto;
+}
+.about-modal .aboutus{
+    display: flex;
+}
+.about-modal h2{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.about-modal p{
+    font-size: 18px;
+    text-align: justify;
+    line-height: 27px;
+}
+.about-modal img{
+    width: 6%;
+    margin-left: 5px;
+}
+
+/* Website Logo */
+.smart{
+    color: rgb(196, 255, 255);
+    margin-left: 3px;
+}
+.city{
+    color: lightgreen;
+    margin-left: 1px;
+}
+.guide{
+    color: white;
+    margin-left: 1px;
+}
+
+/* Navbar */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px 30px;
+    background-image: url("/images/categories/bgimg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 .5rem 1rem rgba(172, 172, 172, 0.15);
+}
+nav .website-title{
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #0000004b;
+}
+nav a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+nav img{
+    width: 7%;
+}
+nav .location{
+    display: flex;
+    align-items: center;
+}
+nav form select{
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 7px;
+    outline: none;
+    margin-right: 15px;
+}
+nav .location .current-location{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 17px;
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 8px;
+    padding: 7px;
+    cursor: pointer;
+}
+nav .location .current-location svg{
+    margin-right: 3px;
+}
+
+/* Navbar Email Us Button */
+nav .emailus-btn{
+    background-color: white;
+    color: black;
+    padding: 3px;
+    border-radius: 8px;
+    border: 1px solid #6c757d;
+    display: none;
+}
+nav .emailus-btn a{
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 0px;
+}
+
+/* Categories */
+.categories{
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+}
+.categories .category{
+    width: 28%;
+    margin: 0px 14px;
+}
+.categories .category img{
+    width: 100%;
+}
+.categories .category  .category-heading{
+    background-color: rgba(0, 0, 0, 0.400) !important;
+    position: relative;
+    text-align: center;
+    margin-top: -35.5px;
+}
+.categories .category a{
+    font-size: 27px;
+    margin-bottom: 0px;
+    color: white;
+    text-decoration: none;
+}
+.categories .category a:hover{
+    color: rgb(226, 226, 226);
+}
+
+/* Write To Us */
+.write-to-us{
+    width: 40%;
+    margin: auto;
+    margin-top: 50px ;
+}
+.write-to-us h1{
+    text-align: center;
+}
+.write-to-us form{
+    font-size: 20px;
+}
+.write-to-us form .form-input{
+    margin-bottom: 8px;
+}
+.write-to-us form input, .write-to-us form textarea{
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 7px;
+    padding: 5px 7px;
+    font-size: 18px;
+    margin: 7px 0px;
+}
+.write-to-us form sup{
+    color: red;
+}
+.write-to-us form button, .write-to-us form .button{
+    padding: 7px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    width: 20%;
+    margin-right: 8px;
+}
+.write-to-us form button:hover, .write-to-us form .button:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #157347;
+    border-color: #146c43;
+}
+
+/* Footer */
+footer{
+    padding: 15px;
+    padding-bottom: 20px;
+    background-color: black;
+    margin-top: 50px ;
+}
+footer .links ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+}
+footer .links ul a, footer .links ul button{
+    display: flex;
+    align-items: center;
+    color: #6c757d;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0px 30px;
+}
+footer .links ul button{
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+}
+footer .links ul a:hover, footer .links ul button:hover{
+    color: #5a6168;
+    cursor: pointer;
+}
+footer .foot{
+    color: #6c757d;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+/* Responsiveness */
+@media only screen and (max-width:565px){
+    /* Footer */
+    footer .links ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .links ul a{
+        margin-bottom: 8px;
+    }
+}
+@media only screen and (max-width: 675px) { 
+    /* About Modal */
+    .about-modal{
+        width: 80%;
+    }
+    /* Navbar */
+    nav{
+        flex-direction: column;
+    }
+    nav .website-title{
+        justify-content: center;
+        background: #00000050;
+        border-radius: 100%;
+    }
+    nav a{
+        margin-block-start: 10px;
+        margin-block-end: 10px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    nav img{
+        width: 12%;
+    }
+
+    /* Categories */
+    .categories{
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .categories .category{
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    /* Write To Us */
+    .write-to-us{
+        width: 75%;
+    }
+}
+@media screen and (max-width:897px) {
+    .city-modal{
+        width: 40%;
+    }
+}
+@media screen and (min-width:676px) and (max-width:750px) {
+    /* About Modal */
+    .about-modal{
+        width: 70%;
+    }
+
+    /* Navbar */
+    nav .website-title{
+        margin:0px 25px !important;
+    }
+    nav img{
+        width: 12%;
+    }
+
+    /* Categories */
+    .categories{
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .categories .category{
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    /* Write To Us */
+    .write-to-us{
+        width: 70%;
+    }
+}
+@media screen and (min-width:676px) and (max-width:700px){
+    /* Navbar Email Us Button in Write To Us Page */
+    nav .emailus-btn{
+        width: 32%;
+    }
+}
+@media screen and (min-width:701px) and (max-width:750px){
+    /* Navbar Email Us Button in Write To Us Page */
+    nav .emailus-btn{
+        width: 29.1%;
+    }
+}
+@media screen and (min-width:751px) and (max-width:770px){
+    /* Navbar Email Us Button in Write To Us Page */
+    nav .emailus-btn{
+        width: 25%;
+    }
+}
+@media screen and (min-width:771px) and (max-width:800px){
+    /* Navbar Email Us Button in Write To Us Page */
+    nav .emailus-btn{
+        width: 24%;
+    }
+}
+@media screen and (min-width:801px) and (max-width:850px){
+    /* Navbar Email Us Button in Write To Us Page */
+    nav .emailus-btn{
+        width: 21%;
+    }
+}
+@media screen and (min-width:851px) and (max-width:900px){
+    /* Navbar Email Us Button in Write To Us Page */
+    nav .emailus-btn{
+        width: 18%;
+    }
+}
+@media screen and (min-width:901px) and (max-width:940px){
+    /* Navbar Email Us Button in Write To Us Page */
+    nav .emailus-btn{
+        width: 16%;
+    }
+}
+@media screen and (min-width:941px) and (max-width:987px){
+    /* Navbar Email Us Button in Write To Us Page */
+    nav .emailus-btn{
+        width: 14%;
+    }
+}
+@media only screen and (min-width:751px) and (max-width: 800px) {
+    /* About Modal */
+    .about-modal{
+        width: 70%;
+    }
+
+    /* Navbar */
+    nav .website-title{
+        margin:0px 25px !important;
+    }
+
+    /* Write To Us */
+    .write-to-us{
+        width: 60%;
+    }
+}
+@media only screen and (min-width:801px) and (max-width: 1000px) {
+    /* About Modal */
+    .about-modal{
+        width: 68%;
+    }
+
+    /* Navbar */
+    nav .website-title{
+        margin:0px 25px !important;
+    }
+
+    /* Write To Us */
+    .write-to-us{
+        width: 50%;
+    }
+}
+@media only screen and (min-width:1001px) and (max-width: 1200px) {
+    /* Navbar */
+    nav .website-title{
+        margin:0px 25px !important;
+    }
+
+    /* Write To Us */
+    .write-to-us{
+        width: 50%;
+    }
+}

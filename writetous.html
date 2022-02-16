@@ -1,4 +1,4 @@
-<!-- HOME PAGE FOR SMART CITY GUIDE -->
+<!-- WRITE TO US PAGE FOR SMART CITY GUIDE -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,34 +6,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart City Guide - Your number one guide in a new city</title>
+    <title>Smart City Guide | Write To Us</title>
     <link rel="shortcut icon" href="favicon/favicon-96x96.png" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css">
+    <!-- Internal CSS -->
+    <style>
+        nav .location{
+            display: none;
+        }
+        nav .emailus-btn{
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Enter a city modal -->
-    <div class="modal" id="city-modal">
-        <div class="city-modal">
-            <h3>Select a city or use GPS for location to browse through various activities.</h3>
-            <button onclick="closeCityModal()">Ok</button>
-        </div>
-    </div>
-
-    <!-- About Modal -->
-    <div class="aboutModal" id="about-modal">
-        <div class="about-modal">
-            <div class="aboutus">
-                <h2>About Us <img src="images/categories/logo.png" alt=""></h2>
-                <button onclick="closeAbout()">&times;</button>
-            </div>
-            <p>Smart City Guide is a guide for anyone who has just reached a new city and want to know about various details about the city such as Hotels, Restaurants, Healthcare, Renting Facilities, Helpline Number, Transportation and much more. Now you don't need different apps or website to find about various things about a city because we provide you every information at just one place. Just select the city or you can also use GPS present in the navbar and then browse through various activities of the city.</p>
-        </div>
-    </div>
-
-    <!-- Navbar -->
-    <nav>
+     <!-- Navbar -->
+     <nav>
         <!-- Website Title -->
         <div class="website-title">
             <img src="images/categories/logo.png" alt="">
@@ -63,35 +53,42 @@
         </div>
     </nav>
 
-    <!-- Categories -->
-    <!-- Get From Database -->
-    <div class="categories">
-        <div class="category">
-            <img src="images/categories/hotels.jpg" alt="">
-            <div class="category-heading">
-                <a class="cat" href="">Hotels</a>
+    <!-- Write To Us -->
+    <div class="write-to-us">
+        <h1>Write To Us</h1>
+        <form action="">
+            <div class="form-input">
+                <label for="name">Name : <sup>*</sup></label>
+                <input type="text" name="name" id="name" placeholder="Enter your name here">
+                <div id="name-required" class="required">Name cannot be blank</div>
             </div>
-        </div>
-        <div class="category">
-            <img src="images/categories/restaurants.jpg" alt="">
-            <div class="category-heading">
-                <a class="cat" href="">Restaurants</a>
+            <div class="form-input">
+                <label for="mail">Email : <sup>*</sup></label>
+                <input type="text" name="email" id="mail" placeholder="Enter your email here">
+                <div id="mail-required" class="required">Email cannot be blank</div>
+                <div id="mail-format" class="required">Email is invalid</div>
             </div>
-        </div>
-        <div class="category">
-            <img src="images/categories/healthcare.jpg" alt="">
-            <div class="category-heading">
-                <a class="cat" href="">Healthcare</a>
+            <div class="form-input">
+                <label for="sub">Subject : <sup>*</sup></label>
+                <input type="text" name="subject" id="sub" placeholder="Enter your message subject here">
+                <div id="name-required" class="required">Subject cannot be blank</div>
             </div>
-        </div>
+            <div class="form-input">
+                <label for="msg">Message : <sup>*</sup></label>
+                <textarea name="message" id="msg" cols="30" rows="8" placeholder="Write your message here"></textarea>
+                <div id="msg-required" class="required">Message cannot be blank</div>
+            </div>
+            <button>Submit</button>
+            <input class="button" type="reset" value="Reset">
+        </form>
     </div>
 
     <!-- Footer -->
     <footer>
         <div class="links">
             <ul>
-                <li><button onclick="about()"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 0 24 24" width="25px" fill="#6c757d"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 5v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H5c-1.11 0-2 .9-2 2zm12 4c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3zm-9 8c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1H6v-1z"/></svg>About Us</button></li>
-                <li><a href="writetous.html"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 0 24 24" width="25px" fill="#6c757d"><path d="M0 0h24v24H0zm15.35 6.41l-1.77-1.77c-.2-.2-.51-.2-.71 0L6 11.53V14h2.47l6.88-6.88c.2-.19.2-.51 0-.71z" fill="none"/><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 14v-2.47l6.88-6.88c.2-.2.51-.2.71 0l1.77 1.77c.2.2.2.51 0 .71L8.47 14H6zm12 0h-7.5l2-2H18v2z"/></svg>Write to us</a></li>
+                <li><a href="javascript:void(0)" onclick="about()"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 0 24 24" width="25px" fill="#6c757d"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 5v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H5c-1.11 0-2 .9-2 2zm12 4c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3zm-9 8c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1H6v-1z"/></svg>About Us</a></li>
+                <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 0 24 24" width="25px" fill="#6c757d"><path d="M0 0h24v24H0zm15.35 6.41l-1.77-1.77c-.2-.2-.51-.2-.71 0L6 11.53V14h2.47l6.88-6.88c.2-.19.2-.51 0-.71z" fill="none"/><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 14v-2.47l6.88-6.88c.2-.2.51-.2.71 0l1.77 1.77c.2.2.2.51 0 .71L8.47 14H6zm12 0h-7.5l2-2H18v2z"/></svg>Write to us</a></li>
                 <li><a href="mailto:smartcityguide01"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 0 24 24" width="25px" fill="#6c757d"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>Email Us</a></li>
             </ul>
         </div>
