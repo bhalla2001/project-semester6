@@ -30,3 +30,20 @@ function about(){
 function closeAbout() {
     document.getElementById('about-modal').style.display='none'
 }
+
+// Typewrite and Cursor Animation
+setTimeout(() => {
+    document.getElementById('line1').style.border='0px'
+    document.getElementById('line2').style.display='block'
+    document.getElementById('line2').classList.add('typewriter2')
+}, 5000);
+
+setTimeout(() => {
+    document.getElementById('line2').style.border='0px'
+    document.getElementById('line3').style.display='block'
+    document.getElementById('line3').classList.add('typewriter3')
+}, 10000);
+
+setTimeout(() => {
+    document.getElementById('line3').style.border='0px'
+}, 18000);
