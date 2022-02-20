@@ -34,33 +34,15 @@ function closeAbout() {
 // Text Transition
 window.onload=()=>{
     setTimeout(() => {
-        document.getElementById('line1').style.opacity=1
+        document.getElementById('home-content-line1').style.opacity=1
     }, 1000);
     setTimeout(() => {
-        document.getElementById('line2').style.opacity=1
-    }, 3000);
+        document.getElementById('home-content-line2').style.opacity=1
+    }, 2500);
     setTimeout(() => {
-        document.getElementById('line3').style.opacity=1
-    }, 5000);
+        document.getElementById('home-content-line3').style.opacity=1
+    }, 4000);
     setTimeout(() => {
-        document.getElementById('line4').style.opacity=1
-    }, 7000);
-
+        document.getElementById('home-content-line4').style.opacity=1
+    }, 5500);
 }
-
-// Typewrite and Cursor Animation
-// setTimeout(() => {
-//     document.getElementById('line1').style.border='0px'
-//     document.getElementById('line2').style.display='block'
-//     document.getElementById('line2').classList.add('typewriter2')
-// }, 5000);
-
-// setTimeout(() => {
-//     document.getElementById('line2').style.border='0px'
-//     document.getElementById('line3').style.display='block'
-//     document.getElementById('line3').classList.add('typewriter3')
-// }, 10000);
-
-// setTimeout(() => {
-//     document.getElementById('line3').style.border='0px'
-// }, 18000);

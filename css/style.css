@@ -195,27 +195,26 @@ nav .emailus-btn a{
 }
 .home-content h2{
     font-size: 22px;
-    transition: 3s;
 }
 .home-content .line1{
     color:purple;
     opacity: 0;
-    transition: 3s;
+    transition: 1s;
 }
 .home-content .line2{
     color: red;
     opacity: 0;
-    transition: 3s;
+    transition: 1s;
 }
 .home-content .line3{
     color: rgb(0, 157, 255);
     opacity: 0;
-    transition: 3s;
+    transition: 1s;
 }
 .home-content .line4{
     color: green;
     opacity: 0;
-    transition: 3s;
+    transition: 1s;
 }
 
 /* Categories */
