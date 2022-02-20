@@ -190,128 +190,32 @@ nav .emailus-btn a{
 }
 
 /* Home Content */
-/* Small View Home */
-.small-view{
-    display: none;
+.home-content{
     text-align: center;
 }
-.small-view h2{
-    font-size: 20px;
-}
-.small-view .linep1{
-    color: blue;
-}
-.small-view .linep2{
-    color: red;
-}
-.small-view .linep3{
-    color: green;
-}
-
-/* Large View Home */
-.typewriter1{
-    animation: typewriter1 4s steps(45) 1s 1 normal both,
-    blinkCursor1 800ms steps(45) infinite normal;
-}
-@keyframes typewriter1{
-    from{
-        width: 0;
-    }
-    to{
-        width: 19.2em;
-    }
-}
-@keyframes blinkCursor1{
-    from{
-        border-right-color: blue;
-    }
-    to{
-        border-right-color: transparent;
-    }
-}
-.typewriter2{
-    animation: typewriter2 4s steps(45) 1s 1 normal both,
-    blinkCursor2 800ms steps(45) infinite normal;
-}
-@keyframes typewriter2{
-    from{
-        width: 0;
-    }
-    to{
-        width: 20.2em;
-    }
-}
-@keyframes blinkCursor2{
-    from{
-        border-right-color: red;
-    }
-    to{
-        border-right-color: transparent;
-    }
-}
-.typewriter3{
-    animation: typewriter3 6s steps(45) 1s 1 normal both,
-    blinkCursor3 800ms steps(45) infinite normal;
-}
-@keyframes typewriter3{
-    from{
-        width: 0;
-    }
-    to{
-        width: 56.2em;
-    }
-}
-@keyframes blinkCursor3{
-    from{
-        border-right-color: green;
-    }
-    to{
-        border-right-color: transparent;
-    }
-}
-
-.home{
-    text-align: center;
-    height: 100px;
-}
-.home h2{
-    font-size: 23px;
-}
-.home .line1{
-    margin: 0 auto;
-    position: relative;
-    border-right: 2px solid blue;
-    white-space: nowrap;
-    top: 20%;
-    color: blue;
-    width: 19.2em;
-    transform: translateY(-50%);
-    overflow: hidden;
-}
-.home .line2{
-    color: red;
-    margin: 0 auto;
-    position: relative;
-    border-right: 2px solid red;
-    white-space: nowrap;
-    top: 25%;
-    width: 20.2em;
-    transform: translateY(-50%);
-    overflow: hidden;
-    display: none;
-}
-.home .line3{
-    color: green;
+.home-content h2{
     font-size: 22px;
-    margin: 0 auto;
-    position: relative;
-    border-right: 2px solid green;
-    white-space: nowrap;
-    top: 30%;
-    width: 56.2em;
-    transform: translateY(-50%);
-    overflow: hidden;
-    display: none;
+    transition: 3s;
+}
+.home-content .line1{
+    color:purple;
+    opacity: 0;
+    transition: 3s;
+}
+.home-content .line2{
+    color: red;
+    opacity: 0;
+    transition: 3s;
+}
+.home-content .line3{
+    color: rgb(0, 157, 255);
+    opacity: 0;
+    transition: 3s;
+}
+.home-content .line4{
+    color: green;
+    opacity: 0;
+    transition: 3s;
 }
 
 /* Categories */
@@ -481,14 +385,6 @@ footer .foot{
     }
 }
 @media screen and (max-width:1115px) {
-    /* Home Small View */
-    .home{
-        display: none;
-    }
-    .small-view{
-        display: block;
-    }
-
 }
 @media screen and (min-width:676px) and (max-width:750px) {
     /* About Modal */

@@ -31,19 +31,36 @@ function closeAbout() {
     document.getElementById('about-modal').style.display='none'
 }
 
+// Text Transition
+window.onload=()=>{
+    setTimeout(() => {
+        document.getElementById('line1').style.opacity=1
+    }, 1000);
+    setTimeout(() => {
+        document.getElementById('line2').style.opacity=1
+    }, 3000);
+    setTimeout(() => {
+        document.getElementById('line3').style.opacity=1
+    }, 5000);
+    setTimeout(() => {
+        document.getElementById('line4').style.opacity=1
+    }, 7000);
+
+}
+
 // Typewrite and Cursor Animation
-setTimeout(() => {
-    document.getElementById('line1').style.border='0px'
-    document.getElementById('line2').style.display='block'
-    document.getElementById('line2').classList.add('typewriter2')
-}, 5000);
+// setTimeout(() => {
+//     document.getElementById('line1').style.border='0px'
+//     document.getElementById('line2').style.display='block'
+//     document.getElementById('line2').classList.add('typewriter2')
+// }, 5000);
 
-setTimeout(() => {
-    document.getElementById('line2').style.border='0px'
-    document.getElementById('line3').style.display='block'
-    document.getElementById('line3').classList.add('typewriter3')
-}, 10000);
+// setTimeout(() => {
+//     document.getElementById('line2').style.border='0px'
+//     document.getElementById('line3').style.display='block'
+//     document.getElementById('line3').classList.add('typewriter3')
+// }, 10000);
 
-setTimeout(() => {
-    document.getElementById('line3').style.border='0px'
-}, 18000);
+// setTimeout(() => {
+//     document.getElementById('line3').style.border='0px'
+// }, 18000);
