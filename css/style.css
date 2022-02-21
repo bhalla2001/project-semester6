@@ -179,7 +179,6 @@ nav .emailus-btn{
     padding: 3px;
     border-radius: 8px;
     border: 1px solid #6c757d;
-    display: none;
 }
 nav .emailus-btn a{
     font-size: 22px;
@@ -301,7 +300,6 @@ footer .links ul{
     list-style: none;
     display: flex;
     justify-content: center;
-    
 }
 footer .links ul a, footer .links ul button{
     display: flex;
@@ -319,6 +317,13 @@ footer .links ul button{
 footer .links ul a:hover, footer .links ul button:hover{
     color: #5a6168;
     cursor: pointer;
+}
+footer .email-id{
+    color: #6c757d;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 14px;
+    font-size: 18px;
 }
 footer .foot{
     color: #6c757d;
